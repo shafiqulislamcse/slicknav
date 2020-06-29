@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+
+	font-family: 'Muli', sans-serif;
+}
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+header{
+	background-color: #292D3E;	
+}
+header::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.brand-name{
+	width: 20%;
+	float: left;
+}
+.brand-name a{
+	font-size: 25px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding:20px 0;
+}
+nav{
+	width: 80%;
+	float: left;
+}
+nav ul{
+	list-style: none;
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	position: relative;
+}
+nav ul li a{
+	font-weight: 300;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	padding:24px 15px;
+	transition: 0.5s ease;
+}
+nav ul li:last-child a{
+	padding-right: 0;
+}
+nav ul li a:hover{
+	color: #0A84FF;
+}
+nav ul li:hover ul{
+	visibility: visible;
+	opacity: 1;
+	top:71px;
+}
+nav ul ul{
+	position: absolute;
+	width: 200px;
+	top: 100px;
+	visibility: hidden;
+	opacity: 0;
+	background-color: #4E5579;
+	border-top: 3px solid #0A84FF;
+	transition: 0.5s ease;
+}
+nav ul ul li{
+	display: block;
+	border-bottom: 1px solid #292D3E;
+}
+nav ul ul li a{
+	display: block;
+	padding:18px 10px;
+}
+nav ul ul li:last-child{
+	border-bottom: none;
+}
+nav ul ul li:hover a{
+	transform: translateX(15px);
+}
+
+.slicknav_menu {
+	display: none;
+}

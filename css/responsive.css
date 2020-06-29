@@ -1,0 +1,28 @@
+@media all and (max-width: 1190px){
+	.header-nav{
+		padding: 0 20px;
+	}
+}
+
+@media all and (max-width: 930px){
+	.brand-name a{
+		font-size: 20px
+	}
+	nav ul li a{
+		font-size: 13px;
+		padding:24px 13px;
+	}
+}
+
+
+@media all and (max-width: 768px){
+	 #menu {
+		display: none;
+	}
+	.slicknav_menu {
+		display: block;
+		width: 75%;
+		float: right;
+		background: transparent;
+	}
+}
